@@ -25,11 +25,16 @@ async function deleteUser(id) {
   return usersRepository.deleteUser(id);
 }
 
+async function updatePassword(id, password) {
+  return usersRepository.changePassword(id, password);
+}
+
 module.exports = {
   getUsers,
   getUser,
   emailExists,
   createUser,
   updateUser,
+  updatePassword,
   deleteUser,
 };
