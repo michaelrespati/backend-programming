@@ -1,11 +1,14 @@
 Kuis Backend Programming
 
 NAMA  : Michael Respati Sanjaya Ho
+
 NIM   : 535250008 / Teknik Informatika
+
 KELAS : A
 
 Penjelasan Mengenai Endpoint :
 1) POST localhost:5000/api/gacha/play =  Parameter ini digunakan untuk melakukan gacha dengan memasukan ID user pemain yang nantinya sistem akan mengundi sebanyak 5 kali dalam satu hari.
+
 Contoh : 
 Kita memasukkan ID user ke dalam Body JSON pada echoAPI
 {
@@ -30,6 +33,7 @@ Namun, jika user sudah melakukan gacha sebanyak 5 kali pada hari ini, maka akan 
 }
 
 2) GET localhost:5000/api/gacha/prizes = Parameter ini digunakan untuk menampilkan hadiah dan kuota hadiah tersisa dari setiap undian yang sudah dilakukan user. 
+
 Contoh :
 [
 	{
@@ -55,6 +59,7 @@ Contoh :
 ]
 
 3) GET localhost:5000/api/gacha/history/:userID = Parameter ini digunakan untuk menampilkan history dan hadiah yang dimenangkan dari setiap user jika sudah melakukan gacha, baik berhasil maupun gagal.
+
 Contoh :
 [
 	{
@@ -95,6 +100,7 @@ Contoh :
 ]
 
 4) GET localhost:5000/api/gacha/winners = Parameter ini berfungsi untuk menampilkan daftar user yang memenangkan gacha, dimana nama setiap user disamarkan.
+
 Contoh :
 [
 	{
